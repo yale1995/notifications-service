@@ -20,8 +20,6 @@ export class Notification {
   }
 
   public set recipientId(recipientId: string) {
-    if (recipientId.length < 5) throw new Error();
-
     this.props.recipientId = recipientId;
   }
 
